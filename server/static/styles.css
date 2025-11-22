@@ -1,0 +1,33 @@
+#root {
+	--background: #0a0a0a;
+	--foreground: #ededed;
+	--font-geist-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	--font-geist-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", "Helvetica Neue";
+}
+
+body { font-family: var(--font-geist-sans); margin:0; background: linear-gradient(135deg,#0b1220 0%,#081025 50%,#06101a 100%); color:var(--foreground) }
+#app { display:flex; height:100vh }
+.sidebar { width:24%; background:rgba(15,23,42,0.6); padding:12px; box-sizing:border-box; backdrop-filter: blur(6px); transition: width 0.25s ease }
+.sidebar.collapsed { width:64px }
+.sidebar-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px }
+.sidebar-title { font-size:1rem; font-weight:700 }
+.sidebar-toggle { background:#111827; color:#cbd5e1; border:none; padding:6px 8px; border-radius:6px; cursor:pointer }
+.sessions-list { list-style:none; padding:0; margin:0 }
+.session-item { padding:8px; border-radius:6px; cursor:pointer; color:#cbd5e1 }
+.session-item.active { background:#111827 }
+
+.main-area { flex:1; display:flex; flex-direction:column; background: rgba(7,10,20,0.35); backdrop-filter: blur(6px) }
+.messages { flex:1; overflow:auto; padding:20px }
+.message-row { display:flex; margin:8px 0 }
+.message-row.right { justify-content:flex-end }
+.message-bubble { padding:10px 14px; border-radius:12px; max-width:70%; white-space:pre-wrap }
+.message-bubble.user { background:#0ea5a4; color:#011; border-bottom-right-radius:4px }
+.message-bubble.assistant { background:rgba(31,41,55,0.9); color:#e6eef8 }
+.attachments { margin-top:6px }
+.attachment-link { display:block; color:#60a5fa; text-decoration:underline; font-size:0.9rem }
+
+.input-area { display:flex; gap:8px; padding:14px; border-top:1px solid rgba(255,255,255,0.03); align-items:center }
+.input-field { flex:1; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background:rgba(6,8,15,0.6); color:#e6eef8 }
+.attach-btn { padding:8px 12px; background:#0b1220; color:#9ca3af; border-radius:6px; cursor:pointer }
+.send-btn { padding:8px 12px; background:#2563eb; color:white; border-radius:6px; cursor:pointer; border:none }
+

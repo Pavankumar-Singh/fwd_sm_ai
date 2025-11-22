@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Forward Simulation - Chat</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-root">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <h2 class="sidebar-title">Sessions</h2>
+          <button id="toggle-sessions" class="sidebar-toggle">Shrink</button>
+        </div>
+        <ul id="sessions" class="sessions-list"></ul>
+      </aside>
+
+      <main id="main" class="main-area">
+        <div id="messages" class="messages"></div>
+
+        <div id="input-area" class="input-area">
+          <input id="input" class="input-field" placeholder="Type your message..." />
+          <input id="file" type="file" multiple style="display:none;" />
+          <label for="file" id="attach" class="attach-btn">Attach</label>
+          <button id="send" class="send-btn">Send</button>
+        </div>
+      </main>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

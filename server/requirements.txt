@@ -1,0 +1,7 @@
+fastapi==0.101.1
+uvicorn[standard]==0.22.0
+# use a compatible httpx version for current Python
+httpx==0.28.1
+# asyncpg is optional; database access is only used when DATABASE_URL is set and asyncpg is available
+jinja2==3.1.2
+python-dotenv==1.0.0

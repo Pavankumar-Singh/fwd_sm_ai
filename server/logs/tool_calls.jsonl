@@ -1,0 +1,2 @@
+{"timestamp": "2025-11-21T13:43:06.947634Z", "tool": "get_file_contents", "arguments": {"owner": "github", "repo": "github-mcp-server", "path": ""}, "result": {"jsonrpc": "2.0", "id": "356344485", "error": {"code": -32601, "message": "Method get_file_contents not found"}}}
+{"timestamp": "2025-11-21T16:34:10.196343Z", "tool": "fetch_credit_records", "arguments": {"sql": "SELECT COUNT(*) AS record_count FROM credit_records"}, "result": {"ok": false, "error": "db_not_configured"}}
